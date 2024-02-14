@@ -7,6 +7,12 @@
     <!-- omni_controll -->
     <node pkg="omni_control" exec="omni_control"></node>
 
+    <!-- servo_atonement -->
+    <node pkg="servo_atonement" exec="servo_atonement"></node>
+
+    <!-- controller_2023_a -->
+    <node pkg="controller_2023_a" exec="controller_2023_a"></node>
+
     <!-- cmd_vel publisher -->
     <node pkg="teleop_twist_joy" exec="teleop_node">
         <param name="axis_linear.x" value="0"/>
@@ -20,5 +26,5 @@
         <param name="require_enable_button" value="false"/>
         <param name="enable_turbo_button" value="-1"/>
     </node>
-  
+
 </launch>
